@@ -114,6 +114,7 @@ c     >		targ%Mtar_struck/1000.,which_pion)
 CDG Change default to PARAM04 - this works better at larger Q2
 c	ntup%sigcm1 = sig_param04(thetacm,phicm,main%t/1.e6,vertex%q2/1.e6,s/1.e6,main%epsilon,
 c     >		targ%Mtar_struck/1000.,which_pion)
+CDG Change default to PARAM3000 - this works better at larger Q2
 	ntup%sigcm1 = sig_param_3000(thetacm,phicm,main%t/1.e6,vertex%q2/1.e6,s/1.e6,main%epsilon,
      >		targ%Mtar_struck/1000.,which_pion)
 
@@ -481,7 +482,6 @@ CDG For now assume sigL(pi+)=sigL(pi-)
 	  return
 	end
 
-
 ***********************************************************************************************
 	real*8 function sig_param_3000(thetacm,phicm,t,q2_gev,s_gev,eps,mtar_gev,which_pion)
 
@@ -538,5 +538,3 @@ CDG For now assume sigL(pi+)=sigL(pi-)
 
 	  return
 	end
-
-
